@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GuiLib2.0" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GuiLib2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-D_WIN32_WINDOWS" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="wsock32" />
+					<Add library="C:\MinGW\lib\libboost_system-mt.a" />
+					<Add library="C:\MinGW\lib\libboost_filesystem-mt.a" />
+					<Add library="C:\MinGW\lib\libboost_thread_win32-mt.dll.a" />
+					<Add library="C:\MinGW\lib\libphysfs.a" />
+					<Add library="C:\MinGW\lib\liblua51.a" />
+					<Add library="ws2_32" />
+					<Add library="mswsock" />
+					<Add library="kernel32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="winmm" />
+					<Add library="C:\MinGW\lib\libdxguid.a" />
+					<Add library="C:\MinGW\lib\libOpenAL32.dll.a" />
+					<Add library="C:\MinGW\lib\libvorbis.dll.a" />
+					<Add library="C:\MinGW\lib\libogg.dll.a" />
+					<Add library="C:\MinGW\lib\libssl.a" />
+					<Add library="C:\MinGW\lib\libz.a" />
+					<Add library="C:\MinGW\lib\libglew32.a" />
+					<Add library="C:\MinGW\lib\libvorbisfile.dll.a" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="C:\MinGW\lib\libboost_chrono-mt.a" />
+					<Add library="C:\MinGW\lib\libcrypto.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GuiLib2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=gnu++0x" />
+			<Add option="-fpermissive" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D_WIN32_WINNT=0x0501" />
+			<Add option="-DWINVER=0x0501" />
+			<Add directory="../GuiLib 2.0" />
+			<Add directory="C:/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="user32" />
+			<Add library="wsock32" />
+		</Linker>
+		<Unit filename="framework/const.h" />
+		<Unit filename="framework/core/adaptativeframecounter.cpp" />
+		<Unit filename="framework/core/adaptativeframecounter.h" />
+		<Unit filename="framework/core/application.cpp" />
+		<Unit filename="framework/core/application.h" />
+		<Unit filename="framework/core/asyncdispatcher.cpp" />
+		<Unit filename="framework/core/asyncdispatcher.h" />
+		<Unit filename="framework/core/binarytree.cpp" />
+		<Unit filename="framework/core/binarytree.h" />
+		<Unit filename="framework/core/clock.cpp" />
+		<Unit filename="framework/core/clock.h" />
+		<Unit filename="framework/core/configmanager.cpp" />
+		<Unit filename="framework/core/configmanager.h" />
+		<Unit filename="framework/core/consoleapplication.cpp" />
+		<Unit filename="framework/core/consoleapplication.h" />
+		<Unit filename="framework/core/declarations.h" />
+		<Unit filename="framework/core/event.cpp" />
+		<Unit filename="framework/core/event.h" />
+		<Unit filename="framework/core/eventdispatcher.cpp" />
+		<Unit filename="framework/core/eventdispatcher.h" />
+		<Unit filename="framework/core/filestream.cpp" />
+		<Unit filename="framework/core/filestream.h" />
+		<Unit filename="framework/core/graphicalapplication.cpp" />
+		<Unit filename="framework/core/graphicalapplication.h" />
+		<Unit filename="framework/core/inputevent.h" />
+		<Unit filename="framework/core/logger.cpp" />
+		<Unit filename="framework/core/logger.h" />
+		<Unit filename="framework/core/module.cpp" />
+		<Unit filename="framework/core/module.h" />
+		<Unit filename="framework/core/modulemanager.cpp" />
+		<Unit filename="framework/core/modulemanager.h" />
+		<Unit filename="framework/core/resourcemanager.cpp" />
+		<Unit filename="framework/core/resourcemanager.h" />
+		<Unit filename="framework/core/scheduledevent.cpp" />
+		<Unit filename="framework/core/scheduledevent.h" />
+		<Unit filename="framework/core/timer.cpp" />
+		<Unit filename="framework/core/timer.h" />
+		<Unit filename="framework/global.h" />
+		<Unit filename="framework/graphics/animatedtexture.cpp" />
+		<Unit filename="framework/graphics/animatedtexture.h" />
+		<Unit filename="framework/graphics/apngloader.cpp" />
+		<Unit filename="framework/graphics/apngloader.h" />
+		<Unit filename="framework/graphics/bitmapfont.cpp" />
+		<Unit filename="framework/graphics/bitmapfont.h" />
+		<Unit filename="framework/graphics/cachedtext.cpp" />
+		<Unit filename="framework/graphics/cachedtext.h" />
+		<Unit filename="framework/graphics/coordsbuffer.cpp" />
+		<Unit filename="framework/graphics/coordsbuffer.h" />
+		<Unit filename="framework/graphics/declarations.h" />
+		<Unit filename="framework/graphics/fontmanager.cpp" />
+		<Unit filename="framework/graphics/fontmanager.h" />
+		<Unit filename="framework/graphics/framebuffer.cpp" />
+		<Unit filename="framework/graphics/framebuffer.h" />
+		<Unit filename="framework/graphics/framebuffermanager.cpp" />
+		<Unit filename="framework/graphics/framebuffermanager.h" />
+		<Unit filename="framework/graphics/glutil.h" />
+		<Unit filename="framework/graphics/graphics.cpp" />
+		<Unit filename="framework/graphics/graphics.h" />
+		<Unit filename="framework/graphics/hardwarebuffer.cpp" />
+		<Unit filename="framework/graphics/hardwarebuffer.h" />
+		<Unit filename="framework/graphics/image.cpp" />
+		<Unit filename="framework/graphics/image.h" />
+		<Unit filename="framework/graphics/ogl/painterogl.cpp" />
+		<Unit filename="framework/graphics/ogl/painterogl.h" />
+		<Unit filename="framework/graphics/ogl/painterogl1.cpp" />
+		<Unit filename="framework/graphics/ogl/painterogl1.h" />
+		<Unit filename="framework/graphics/ogl/painterogl2.cpp" />
+		<Unit filename="framework/graphics/ogl/painterogl2.h" />
+		<Unit filename="framework/graphics/ogl/painterogl2_shadersources.h" />
+		<Unit filename="framework/graphics/painter.cpp" />
+		<Unit filename="framework/graphics/painter.h" />
+		<Unit filename="framework/graphics/paintershaderprogram.cpp" />
+		<Unit filename="framework/graphics/paintershaderprogram.h" />
+		<Unit filename="framework/graphics/particle.cpp" />
+		<Unit filename="framework/graphics/particle.h" />
+		<Unit filename="framework/graphics/particleaffector.cpp" />
+		<Unit filename="framework/graphics/particleaffector.h" />
+		<Unit filename="framework/graphics/particleeffect.cpp" />
+		<Unit filename="framework/graphics/particleeffect.h" />
+		<Unit filename="framework/graphics/particleemitter.cpp" />
+		<Unit filename="framework/graphics/particleemitter.h" />
+		<Unit filename="framework/graphics/particlemanager.cpp" />
+		<Unit filename="framework/graphics/particlemanager.h" />
+		<Unit filename="framework/graphics/particlesystem.cpp" />
+		<Unit filename="framework/graphics/particlesystem.h" />
+		<Unit filename="framework/graphics/particletype.cpp" />
+		<Unit filename="framework/graphics/particletype.h" />
+		<Unit filename="framework/graphics/shader.cpp" />
+		<Unit filename="framework/graphics/shader.h" />
+		<Unit filename="framework/graphics/shaderprogram.cpp" />
+		<Unit filename="framework/graphics/shaderprogram.h" />
+		<Unit filename="framework/graphics/texture.cpp" />
+		<Unit filename="framework/graphics/texture.h" />
+		<Unit filename="framework/graphics/texturemanager.cpp" />
+		<Unit filename="framework/graphics/texturemanager.h" />
+		<Unit filename="framework/graphics/vertexarray.h" />
+		<Unit filename="framework/input/mouse.cpp" />
+		<Unit filename="framework/input/mouse.h" />
+		<Unit filename="framework/luaengine/crashhandler.h" />
+		<Unit filename="framework/luaengine/declarations.h" />
+		<Unit filename="framework/luaengine/lbitlib.cpp" />
+		<Unit filename="framework/luaengine/lbitlib.h" />
+		<Unit filename="framework/luaengine/luabinder.h" />
+		<Unit filename="framework/luaengine/luaexception.cpp" />
+		<Unit filename="framework/luaengine/luaexception.h" />
+		<Unit filename="framework/luaengine/luainterface.cpp" />
+		<Unit filename="framework/luaengine/luainterface.h" />
+		<Unit filename="framework/luaengine/luaobject.cpp" />
+		<Unit filename="framework/luaengine/luaobject.h" />
+		<Unit filename="framework/luaengine/luavaluecasts.cpp" />
+		<Unit filename="framework/luaengine/luavaluecasts.h" />
+		<Unit filename="framework/net/connection.h" />
+		<Unit filename="framework/net/declarations.h" />
+		<Unit filename="framework/net/inputmessage.h" />
+		<Unit filename="framework/net/outputmessage.h" />
+		<Unit filename="framework/net/protocol.h" />
+		<Unit filename="framework/net/protocolhttp.h" />
+		<Unit filename="framework/net/server.h" />
+		<Unit filename="framework/otml/declarations.h" />
+		<Unit filename="framework/otml/otml.h" />
+		<Unit filename="framework/otml/otmldocument.cpp" />
+		<Unit filename="framework/otml/otmldocument.h" />
+		<Unit filename="framework/otml/otmlemitter.cpp" />
+		<Unit filename="framework/otml/otmlemitter.h" />
+		<Unit filename="framework/otml/otmlexception.cpp" />
+		<Unit filename="framework/otml/otmlexception.h" />
+		<Unit filename="framework/otml/otmlnode.cpp" />
+		<Unit filename="framework/otml/otmlnode.h" />
+		<Unit filename="framework/otml/otmlparser.cpp" />
+		<Unit filename="framework/otml/otmlparser.h" />
+		<Unit filename="framework/pch.h" />
+		<Unit filename="framework/platform/crashhandler.h" />
+		<Unit filename="framework/platform/platform.cpp" />
+		<Unit filename="framework/platform/platform.h" />
+		<Unit filename="framework/platform/platformwindow.cpp" />
+		<Unit filename="framework/platform/platformwindow.h" />
+		<Unit filename="framework/platform/win32crashhandler.cpp" />
+		<Unit filename="framework/platform/win32platform.cpp" />
+		<Unit filename="framework/platform/win32window.cpp" />
+		<Unit filename="framework/platform/win32window.h" />
+		<Unit filename="framework/platform/x11window.h" />
+		<Unit filename="framework/sound/combinedsoundsource.h" />
+		<Unit filename="framework/sound/declarations.h" />
+		<Unit filename="framework/sound/oggsoundfile.h" />
+		<Unit filename="framework/sound/soundbuffer.h" />
+		<Unit filename="framework/sound/soundchannel.h" />
+		<Unit filename="framework/sound/soundfile.h" />
+		<Unit filename="framework/sound/soundmanager.h" />
+		<Unit filename="framework/sound/soundsource.h" />
+		<Unit filename="framework/sound/streamsoundsource.h" />
+		<Unit filename="framework/stdext/any.h" />
+		<Unit filename="framework/stdext/boolean.h" />
+		<Unit filename="framework/stdext/cast.h" />
+		<Unit filename="framework/stdext/compiler.h" />
+		<Unit filename="framework/stdext/coroutine.h" />
+		<Unit filename="framework/stdext/demangle.cpp" />
+		<Unit filename="framework/stdext/demangle.h" />
+		<Unit filename="framework/stdext/dumper.h" />
+		<Unit filename="framework/stdext/dynamic_storage.h" />
+		<Unit filename="framework/stdext/exception.h" />
+		<Unit filename="framework/stdext/format.h" />
+		<Unit filename="framework/stdext/math.cpp" />
+		<Unit filename="framework/stdext/math.h" />
+		<Unit filename="framework/stdext/net.cpp" />
+		<Unit filename="framework/stdext/net.h" />
+		<Unit filename="framework/stdext/packed_any.h" />
+		<Unit filename="framework/stdext/packed_storage.h" />
+		<Unit filename="framework/stdext/packed_vector.h" />
+		<Unit filename="framework/stdext/shared_object.h" />
+		<Unit filename="framework/stdext/shared_ptr.h" />
+		<Unit filename="framework/stdext/stdext.h" />
+		<Unit filename="framework/stdext/string.cpp" />
+		<Unit filename="framework/stdext/string.h" />
+		<Unit filename="framework/stdext/thread.h" />
+		<Unit filename="framework/stdext/time.cpp" />
+		<Unit filename="framework/stdext/time.h" />
+		<Unit filename="framework/stdext/traits.h" />
+		<Unit filename="framework/stdext/types.h" />
+		<Unit filename="framework/ui/declarations.h" />
+		<Unit filename="framework/ui/ui.h" />
+		<Unit filename="framework/ui/uianchorlayout.cpp" />
+		<Unit filename="framework/ui/uianchorlayout.h" />
+		<Unit filename="framework/ui/uiboxlayout.cpp" />
+		<Unit filename="framework/ui/uiboxlayout.h" />
+		<Unit filename="framework/ui/uigridlayout.cpp" />
+		<Unit filename="framework/ui/uigridlayout.h" />
+		<Unit filename="framework/ui/uihorizontallayout.cpp" />
+		<Unit filename="framework/ui/uihorizontallayout.h" />
+		<Unit filename="framework/ui/uilayout.cpp" />
+		<Unit filename="framework/ui/uilayout.h" />
+		<Unit filename="framework/ui/uimanager.cpp" />
+		<Unit filename="framework/ui/uimanager.h" />
+		<Unit filename="framework/ui/uiparticles.cpp" />
+		<Unit filename="framework/ui/uiparticles.h" />
+		<Unit filename="framework/ui/uitextedit.cpp" />
+		<Unit filename="framework/ui/uitextedit.h" />
+		<Unit filename="framework/ui/uitranslator.cpp" />
+		<Unit filename="framework/ui/uitranslator.h" />
+		<Unit filename="framework/ui/uiverticallayout.cpp" />
+		<Unit filename="framework/ui/uiverticallayout.h" />
+		<Unit filename="framework/ui/uiwidget.cpp" />
+		<Unit filename="framework/ui/uiwidget.h" />
+		<Unit filename="framework/ui/uiwidgetbasestyle.cpp" />
+		<Unit filename="framework/ui/uiwidgetimage.cpp" />
+		<Unit filename="framework/ui/uiwidgettext.cpp" />
+		<Unit filename="framework/util/color.cpp" />
+		<Unit filename="framework/util/color.h" />
+		<Unit filename="framework/util/crypt.cpp" />
+		<Unit filename="framework/util/crypt.h" />
+		<Unit filename="framework/util/databuffer.h" />
+		<Unit filename="framework/util/matrix.h" />
+		<Unit filename="framework/util/point.h" />
+		<Unit filename="framework/util/rect.h" />
+		<Unit filename="framework/util/size.h" />
+		<Unit filename="framework/xml/tinystr.h" />
+		<Unit filename="framework/xml/tinyxml.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
